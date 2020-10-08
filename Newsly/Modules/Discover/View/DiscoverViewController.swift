@@ -25,11 +25,12 @@ class DiscoverViewController: BaseViewController {
         presenter?.viewDidLoad()
     }
     
-    
     override func setUpUI() {
         super.setUpUI()
         addSubViews()
         makeConstraints()
+        
+        // MARK: Uncomment the line below
         self.presenter?.collectionManager?.setUpCollectionView(collectionView: self.collectionView)
     }
     
@@ -41,7 +42,8 @@ class DiscoverViewController: BaseViewController {
     override func makeConstraints() {
         super.makeConstraints()
         collectionView.snp.makeConstraints { (make) in
-            make.edges.equalToSuperview()
+            make.top.equalTo(self.view.safeAreaLayoutGuide.snp.topMargin)
+            make.leading.trailing.bottom.equalToSuperview().inset(15.0)
         }
     }
 

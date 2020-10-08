@@ -9,9 +9,10 @@ import UIKit
 
 extension DiscoverCollectionViewManager {
     struct Appearance {
-        let imageHeight: CGFloat = 150.0
-        let titleFont: UIFont = UIFont.boldItalic18
-        let descriptionFont: UIFont = UIFont.semibold15
+        let imageHeight: CGFloat = 250.0
+        let insets: CGFloat = 10.0
+        let titleFont: UIFont = UIFont.extraBold28
+        let descriptionFont: UIFont = UIFont.medium14
     }
 }
 
@@ -29,7 +30,6 @@ class DiscoverCollectionViewManager: NSObject {
     weak var collectionView: UICollectionView?
     
     private var articles: [Article]?
-    
     private let appearance = Appearance()
     
     
@@ -42,9 +42,7 @@ class DiscoverCollectionViewManager: NSObject {
         
         return CGSize(width: collectionView.frame.size.width,
                       height: titleHeight + descriptionHeight + self.appearance.imageHeight)
-        
     }
-    
     
     private func getTitleHeight(at row: Int) -> CGFloat {
         guard
@@ -71,7 +69,6 @@ class DiscoverCollectionViewManager: NSObject {
         
         return descriptionSize.height
     }
-    
 }
 
 
@@ -91,7 +88,6 @@ extension DiscoverCollectionViewManager: DiscoverCollectionViewManagerProtocol {
     
 }
 
-
 extension DiscoverCollectionViewManager: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return articles?.count ?? 0
@@ -107,18 +103,13 @@ extension DiscoverCollectionViewManager: UICollectionViewDataSource {
         cell.viewModel = cellViewModel
         return cell
     }
-    
-    
 }
 
 
-extension DiscoverCollectionViewManager: UICollectionViewDelegate {
-    
-    
-}
+extension DiscoverCollectionViewManager: UICollectionViewDelegate {}
 
 extension DiscoverCollectionViewManager: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        self.getCellSize(at: indexPath.row)
+        return self.getCellSize(at: indexPath.row)
     }
 }

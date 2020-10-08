@@ -20,6 +20,7 @@ class DiscoverPresenter {
 //MARK: - DiscoverPresenterProtocol
 extension DiscoverPresenter: DiscoverPresenterProtocol {
     func viewDidLoad() {
+        view?.showActivityIndicator()
         interactor?.fetchTrendingArticles()
     }
     
@@ -28,11 +29,13 @@ extension DiscoverPresenter: DiscoverPresenterProtocol {
 //MARK: - DiscoverPresenterInput
 extension DiscoverPresenter: DiscoverPresenterInput {
     func apiFetchSuccess(articles: [Article]) {
+        view?.hideActivityIndicator()
         self.collectionManager?.setupChats(articles: articles)
     }
     
     func handleError(error: Error) {
-        self.view?.presentAlert(title: "Error", message: error.localizedDescription, action: nil)
+        view?.hideActivityIndicator()
+        self.view?.presentAlert(title: "error", message: error.localizedDescription, action: ActionAlertModel(actionText: "Ok", actionHandler: {}))
     }
     
     
