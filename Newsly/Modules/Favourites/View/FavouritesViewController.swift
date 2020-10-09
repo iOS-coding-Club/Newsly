@@ -38,6 +38,7 @@ class FavouritesViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.presenter?.viewDidLoad()
         setUpUI()
     }
     

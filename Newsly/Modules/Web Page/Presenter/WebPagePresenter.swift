@@ -10,13 +10,21 @@ import Foundation
 class WebPagePresenter {
     
     weak var view: WebPageViewInput?
+    var interactor: WebPageInteractorInput?
     var urlString: String?
+    var article: Article?
 }
 
 extension WebPagePresenter: WebPagePresenterProtocol {
+
     func viewDidLoad() {
         guard let urlString = self.urlString else { return }
         self.view?.showWebPage(url: urlString)
+    }
+    
+    func saveArticle() {
+        guard let article = self.article else { return }
+        interactor?.saveAsFavourite(article: article)
     }
 }
 

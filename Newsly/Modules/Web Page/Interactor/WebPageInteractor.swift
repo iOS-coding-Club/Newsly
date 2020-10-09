@@ -7,6 +7,12 @@
 
 import Foundation
 
-protocol WebPageInteractorInput: class {
-   
+class WebPageInteractor: WebPageInteractorInput {
+    
+//    var presenter: FavouritesPresenterInput?
+    var dataBaseManager: DataBaseServiceProtocol?
+    
+    func saveAsFavourite(article: Article) {
+        dataBaseManager?.saveFavourite(article: article)
+    }
 }

@@ -35,6 +35,10 @@ extension FavouritesPresenter: FavouritesPresenterProtocol {
     func searchForArticles(by name: String) {
         // TODO: Set the collection View Manager
         view?.showActivityIndicator()
+//        interactor?.fetchFavouritesArticles()
+    }
+    
+    func viewDidLoad() {
         interactor?.fetchFavouritesArticles()
     }
 }

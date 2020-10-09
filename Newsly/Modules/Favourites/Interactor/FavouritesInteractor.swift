@@ -11,19 +11,11 @@ class FavouritesInteractor: FavouritesInteractorInput {
     
     var presenter: FavouritesPresenterInput?
     var apiManager: NetworkService<ArticleEndpoint>?
+    var dataBaseManager: DataBaseServiceProtocol?
     
     func fetchFavouritesArticles() {
         // MARK: Todo - Change it to fetch from firebase
-        apiManager?.networkRequest(from: .getTopHeadlines, modelType: ArticlesModel.self, completion: {[weak self] (result) in
-            DispatchQueue.main.async {[weak self] in
-                switch result {
-                case .success(let articlesModel):
-                    self?.presenter?.ApiFetchSuccess(articles: articlesModel.articles)
-                case .failure(let error):
-                    self?.presenter?.handleError(error: error)
-                }
-            }
-        })
+        dataBaseManager?.loadData()
     }
     
     func searchByName(by name: String, articles: [Article]) -> [Article] {

@@ -11,21 +11,21 @@ import Firebase
 protocol DataBaseServiceProtocol: class {
     func saveFavourite(article: Article)
 //    func saveUserInfo(fullName: String, img: String)
-    func isArticleSaved(article: Article)
     func queryFavourites(queryBy: String)
+    func loadData() -> [Article]
 }
 
 class DataBaseService: DataBaseServiceProtocol {
     
-//    weak var appInteratcor: AppInteractorProtocol?
-
+    let db = Firestore.firestore()
+    let uid = Firebase.Auth.auth().currentUser?.uid
     
     func saveFavourite(article: Article) {
-//        <#code#>
+        
     }
     
-    func isArticleSaved(article: Article) {
-//        <#code#>
+    func loadData() -> [Article] {
+        return [Article]()
     }
     
     func queryFavourites(queryBy: String) {

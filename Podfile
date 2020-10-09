@@ -10,5 +10,10 @@ target 'Newsly' do
   pod 'SnapKit'
   pod 'Kingfisher', '~> 5.0'
   pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+  
+  pod 'FirebaseFirestoreSwift'
+
+  
 
 end

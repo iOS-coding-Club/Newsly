@@ -28,7 +28,7 @@ class WebPageViewController: BaseViewController {
     
     private lazy var favouriteButton: UIBarButtonItem = {
         let barButtonItem = UIBarButtonItem(barButtonSystemItem: .bookmarks, target: self, action: #selector(favouriteButtonTapped))
-//        barButtonItem.image
+//        barButtonItem.image = UIImage(systemName: .)
         return barButtonItem
     }()
     
@@ -63,7 +63,7 @@ class WebPageViewController: BaseViewController {
     }
     
     @objc private func favouriteButtonTapped() {
-        print("Favourite!")
+        self.presenter?.saveArticle()
     }
 }
 

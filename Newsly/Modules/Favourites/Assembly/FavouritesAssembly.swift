@@ -17,6 +17,8 @@ class FavouritesAssembly {
         let interactor = FavouritesInteractor()
         let router = FavouritesRouter()
         
+        let dataBaseService: DataBaseService? = ServiceLocator.shared.getService()
+        
         view.presenter = preseneter
         
         collectionManager.delegate = preseneter
@@ -29,7 +31,7 @@ class FavouritesAssembly {
         preseneter.searchControllerManager = searchBarManager
         
         interactor.presenter = preseneter
-//        interactor.apiManager = ServiceLocator.shared.getService()
+        interactor.dataBaseManager = dataBaseService
         
         router.view = view
         

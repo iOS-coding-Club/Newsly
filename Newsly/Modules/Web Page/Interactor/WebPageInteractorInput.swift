@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol WebPageInteractorInput {
+    func saveAsFavourite(article: Article)
+}

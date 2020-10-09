@@ -16,8 +16,7 @@ class AppInteractor: AppInteractorProtocol {
     
     private var coordinator: AppCoordinatorProtocol?
     private var windowScene: UIWindowScene!
-    private var profileService: ProfileServiceProtocol?
-    
+    private var profileService: ProfileServiceProtocol?    
     
     init(windowScene: UIWindowScene) {
         self.windowScene = windowScene
@@ -41,6 +40,8 @@ class AppInteractor: AppInteractorProtocol {
         profileService.appInteratcor = self
         ServiceLocator.shared.addService(service: profileService as ProfileService)
         
+        let dataBaseService = DataBaseService()
+        ServiceLocator.shared.addService(service: dataBaseService as DataBaseService)
     }
     
      func checkIfUserisAuthenticated() {
