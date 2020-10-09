@@ -30,6 +30,7 @@ class AppInteractor: AppInteractorProtocol {
     
     private func setupFirebase() {
         FirebaseApp.configure()
+        
     }
     
     private func setupServiceLocator() {

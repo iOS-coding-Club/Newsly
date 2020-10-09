@@ -9,6 +9,6 @@ target 'Newsly' do
   pod 'Reveal-SDK', '26', :configurations => ['Debug']
   pod 'SnapKit'
   pod 'Kingfisher', '~> 5.0'
-  pod 'Firebase/Auth'
+#  pod 'Firebase/Auth'
 
 end

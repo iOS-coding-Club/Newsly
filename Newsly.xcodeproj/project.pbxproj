@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -120,6 +120,9 @@
 		B2990A39252FA4C70078DFF8 /* WebPageInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2990A38252FA4C70078DFF8 /* WebPageInteractorProtocol.swift */; };
 		B2990A3C252FA5860078DFF8 /* WebPageViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2990A3B252FA5860078DFF8 /* WebPageViewInput.swift */; };
 		B2990A42252FB5C30078DFF8 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2990A41252FB5C30078DFF8 /* ServiceLocator.swift */; };
+		B2F0E6F12530A54500896B70 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B2F0E6F02530A54500896B70 /* FirebaseAuth */; };
+		B2F0E6F32530A54500896B70 /* FirebaseStorageSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B2F0E6F22530A54500896B70 /* FirebaseStorageSwift */; };
+		B2F0E6F52530A54500896B70 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B2F0E6F42530A54500896B70 /* FirebaseFirestoreSwift */; };
 		B2FE83D8252FBF2B000ABF92 /* ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FE83D7252FBF2B000ABF92 /* ProfileService.swift */; };
 		FEC196E875ECBCD449BB6AF0 /* Pods_Newsly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FADC0EEFE8129236896A1F5D /* Pods_Newsly.framework */; };
 /* End PBXBuildFile section */
@@ -252,6 +255,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEC196E875ECBCD449BB6AF0 /* Pods_Newsly.framework in Frameworks */,
+				B2F0E6F12530A54500896B70 /* FirebaseAuth in Frameworks */,
+				B2F0E6F32530A54500896B70 /* FirebaseStorageSwift in Frameworks */,
+				B2F0E6F52530A54500896B70 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -954,13 +960,18 @@
 				B2173BA0252B7864000FA911 /* Sources */,
 				B2173BA1252B7864000FA911 /* Frameworks */,
 				B2173BA2252B7864000FA911 /* Resources */,
-				94674522B6BF53ED74B58946 /* [CP] Embed Pods Frameworks */,
+				571F72F8553A0711FB1CB3A8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Newsly;
+			packageProductDependencies = (
+				B2F0E6F02530A54500896B70 /* FirebaseAuth */,
+				B2F0E6F22530A54500896B70 /* FirebaseStorageSwift */,
+				B2F0E6F42530A54500896B70 /* FirebaseFirestoreSwift */,
+			);
 			productName = Newsly;
 			productReference = B2173BA4252B7864000FA911 /* Newsly.app */;
 			productType = "com.apple.product-type.application";
@@ -988,6 +999,9 @@
 				Base,
 			);
 			mainGroup = B2173B9B252B7864000FA911;
+			packageReferences = (
+				B2F0E6EF2530A54500896B70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = B2173BA5252B7864000FA911 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1024,6 +1038,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		571F72F8553A0711FB1CB3A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Newsly/Pods-Newsly-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Newsly/Pods-Newsly-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Newsly/Pods-Newsly-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7308D51601C2462C3E9796E5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1044,23 +1075,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		94674522B6BF53ED74B58946 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Newsly/Pods-Newsly-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Newsly/Pods-Newsly-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Newsly/Pods-Newsly-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1365,6 +1379,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B2F0E6EF2530A54500896B70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = "6.34-spm-beta";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B2F0E6F02530A54500896B70 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2F0E6EF2530A54500896B70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		B2F0E6F22530A54500896B70 /* FirebaseStorageSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2F0E6EF2530A54500896B70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorageSwift;
+		};
+		B2F0E6F42530A54500896B70 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2F0E6EF2530A54500896B70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B2173B9C252B7864000FA911 /* Project object */;
 }

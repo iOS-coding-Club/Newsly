@@ -358,7 +358,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "07A4DD29-4330-4B77-994C-B1CBAFC1DE53"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Newsly/Modules/Sign Up/Presenter/SignUpPresenter.swift"
@@ -374,7 +374,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "C5DB6B57-52BC-496C-BBA2-8A5B140D7AF2"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Newsly/Modules/Sign Up/Presenter/SignUpPresenter.swift"
@@ -412,10 +412,10 @@
             filePath = "Newsly/App/AppInteractor.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "setupServiceLocator()"
-            landmarkType = "7">
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -428,10 +428,10 @@
             filePath = "Newsly/App/AppInteractor.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "setupServiceLocator()"
-            landmarkType = "7">
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -528,38 +528,6 @@
             endingLineNumber = "46"
             landmarkName = "signIn(email:password:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "2157DC80-C0C0-4783-82F0-BAF436DCFD7E - f65d8f2ba9867335"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Newsly.ProfileService.signIn(email: Swift.String, password: Swift.String) -&gt; ()"
-                  moduleName = "Newsly"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ebubed/My%20Documents/Newsly/Newsly/Services/ProfileService/ProfileService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46"
-                  offsetFromSymbolStart = "266">
-               </Location>
-               <Location
-                  uuid = "2157DC80-C0C0-4783-82F0-BAF436DCFD7E - d8dfe73b4b388e89"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Newsly.ProfileService.signIn(email: Swift.String, password: Swift.String) -&gt; ()"
-                  moduleName = "Newsly"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ebubed/My%20Documents/Newsly/Newsly/Services/ProfileService/ProfileService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46"
-                  offsetFromSymbolStart = "4">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
