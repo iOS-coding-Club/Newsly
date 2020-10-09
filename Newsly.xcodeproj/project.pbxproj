@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A92077EE2530C0BF004959A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92077ED2530C0BF004959A6 /* Constants.swift */; };
 		A932C0B5252CA23D006F2960 /* UIColors+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A932C0B4252CA23C006F2960 /* UIColors+Extensions.swift */; };
 		A932C0C2252CCD39006F2960 /* SourcesViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A932C0C1252CCD39006F2960 /* SourcesViewInput.swift */; };
 		A932C0C6252CCD43006F2960 /* SourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A932C0C5252CCD43006F2960 /* SourcesViewController.swift */; };
@@ -109,7 +110,6 @@
 		B2173C38252BBC86000FA911 /* EBGaramond-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2173C1A252BBC5F000FA911 /* EBGaramond-SemiBold.ttf */; };
 		B2173C3A252BBC8A000FA911 /* EBGaramond-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2173C20252BBC60000FA911 /* EBGaramond-SemiBoldItalic.ttf */; };
 		B2173C3C252BBC8D000FA911 /* EBGaramond-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2173C1B252BBC5F000FA911 /* EBGaramond-VariableFont_wght.ttf */; };
-		B2173C3F252BBD8C000FA911 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2173C3E252BBD8C000FA911 /* Constants.swift */; };
 		B2173C44252BC361000FA911 /* DiscoverCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2173C43252BC361000FA911 /* DiscoverCollectionViewCell.swift */; };
 		B2173C48252BC505000FA911 /* ArticlesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2173C47252BC505000FA911 /* ArticlesModel.swift */; };
 		B2173C4B252BCE2A000FA911 /* UICollectionViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2173C4A252BCE2A000FA911 /* UICollectionViewCell+Extensions.swift */; };
@@ -130,6 +130,7 @@
 /* Begin PBXFileReference section */
 		0048BEBD93DEE84F8860E2A2 /* Pods-Newsly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Newsly.release.xcconfig"; path = "Target Support Files/Pods-Newsly/Pods-Newsly.release.xcconfig"; sourceTree = "<group>"; };
 		3BA642893EBF286A5CE43FB7 /* Pods-Newsly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Newsly.debug.xcconfig"; path = "Target Support Files/Pods-Newsly/Pods-Newsly.debug.xcconfig"; sourceTree = "<group>"; };
+		A92077ED2530C0BF004959A6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A932C0B4252CA23C006F2960 /* UIColors+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColors+Extensions.swift"; sourceTree = "<group>"; };
 		A932C0C1252CCD39006F2960 /* SourcesViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesViewInput.swift; sourceTree = "<group>"; };
 		A932C0C5252CCD43006F2960 /* SourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesViewController.swift; sourceTree = "<group>"; };
@@ -234,7 +235,6 @@
 		B2173C23252BBC60000FA911 /* EBGaramond-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "EBGaramond-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		B2173C24252BBC60000FA911 /* EBGaramond-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "EBGaramond-Italic.ttf"; sourceTree = "<group>"; };
 		B2173C25252BBC60000FA911 /* EBGaramond-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "EBGaramond-Bold.ttf"; sourceTree = "<group>"; };
-		B2173C3E252BBD8C000FA911 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B2173C43252BC361000FA911 /* DiscoverCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCollectionViewCell.swift; sourceTree = "<group>"; };
 		B2173C47252BC505000FA911 /* ArticlesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesModel.swift; sourceTree = "<group>"; };
 		B2173C4A252BCE2A000FA911 /* UICollectionViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extensions.swift"; sourceTree = "<group>"; };
@@ -707,7 +707,7 @@
 		B2173B9B252B7864000FA911 = {
 			isa = PBXGroup;
 			children = (
-				B2173C3E252BBD8C000FA911 /* Constants.swift */,
+				A92077ED2530C0BF004959A6 /* Constants.swift */,
 				A94BFC2325307914004D8E26 /* GoogleService-Info.plist */,
 				B2173BA6252B7864000FA911 /* Newsly */,
 				B2173BA5252B7864000FA911 /* Products */,
@@ -1087,7 +1087,6 @@
 				A968139F252E22CB001DCAE9 /* LoginPresenter.swift in Sources */,
 				B2173BA8252B7864000FA911 /* AppDelegate.swift in Sources */,
 				A968132E252D3A2E001DCAE9 /* FavouritesRouter.swift in Sources */,
-				B2173C3F252BBD8C000FA911 /* Constants.swift in Sources */,
 				B2990A39252FA4C70078DFF8 /* WebPageInteractorProtocol.swift in Sources */,
 				A932C10F252CEFEA006F2960 /* SearchPresenter.swift in Sources */,
 				A94BFC282530793C004D8E26 /* DataBaseService.swift in Sources */,
@@ -1180,6 +1179,7 @@
 				A968139C252E22C2001DCAE9 /* LoginPresenterProtocols.swift in Sources */,
 				B2990A36252FA4B90078DFF8 /* WebPageInteractor.swift in Sources */,
 				A9681395252E22AF001DCAE9 /* SignUpPresenterProtcols.swift in Sources */,
+				A92077EE2530C0BF004959A6 /* Constants.swift in Sources */,
 				A9681399252E22B8001DCAE9 /* SignUpPresenter.swift in Sources */,
 				B2173BE4252B91BE000FA911 /* DiscoverCollectionViewManager.swift in Sources */,
 			);
