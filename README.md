@@ -1,4 +1,4 @@
-# Newsly
+# Newsly - News app using VIPER iOS
 > Newsly is a news app fetching data from the "newsApi" and displaying it and few modes.The project was made with Viper Architecture.
 
 ## Table of contents
