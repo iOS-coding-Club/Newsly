@@ -15,9 +15,9 @@ Newsly app is a news app where you get the latest news, as well as news by categ
 
 ## Installation:
 
-1. [Get your News API key] (https://newsapi.org)
+1. [Get your News API key](https://newsapi.org)
 
-2. [Get your google.plist file] (https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjz1-3U16rsAhVE3dUKHXjzD8YYABAAGgJ3cw&ohost=www.google.com&cid=CAESQOD2p4915hCOcLEoSbb3g8Pul5Ed_OrMHAdIzOvSF4d-QNrb_9gousJb398STrH-JqFm4_K2fd2hIM07otFwCsM&sig=AOD64_1owLXQ__dQ4hr-W1rkFRiILT5z-A&q&adurl&ved=2ahUKEwivpuPU16rsAhWFzoUKHV2dAfAQ0Qx6BAggEAE)
+2. [Get your google.plist file](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjz1-3U16rsAhVE3dUKHXjzD8YYABAAGgJ3cw&ohost=www.google.com&cid=CAESQOD2p4915hCOcLEoSbb3g8Pul5Ed_OrMHAdIzOvSF4d-QNrb_9gousJb398STrH-JqFm4_K2fd2hIM07otFwCsM&sig=AOD64_1owLXQ__dQ4hr-W1rkFRiILT5z-A&q&adurl&ved=2ahUKEwivpuPU16rsAhWFzoUKHV2dAfAQ0Qx6BAggEAE)
 
 3. Insert your key into Container.swift file
 
