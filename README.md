@@ -14,10 +14,10 @@
 Newsly app is a news app where you get the latest news, as well as news by categories and also you could save your favourite articles.
 
 ## Screenshots
-![Example-Movie1](./Images/Movie1.gif)
-![Example-Movie2](./Images/Movie2.gif)
-![Example-Movie3](./Images/Movie3.gif)
-![Example-Movie4](./Images/Movie4.gif)
+![Example-Movie1](./Movie1-Gif.gif)
+![Example-Movie2](./Movie2-Gif.gif)
+![Example-Movie3](./Movie3-Gif.gif)
+![Example-Movie4](./Movie4-Gif.gif)
 
 ## Technologies
 * Xcode 12.0
