@@ -4,6 +4,7 @@
 ## Table of contents
 * [General info](#general-info)
 * [Screenshots](#screenshots)
+* [Setup](#setup)
 * [Technologies](#technologies)
 * [Features](#features)
 * [Status](#status)
@@ -13,7 +14,7 @@
 ## General info
 Newsly app is a news app where you get the latest news, as well as news by categories and also you could save your favourite articles.
 
-## Installation:
+## Setup:
 
 1. [Get your News API key](https://newsapi.org)
 
